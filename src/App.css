@@ -7,16 +7,29 @@ body {
   max-width: 728px;
   margin: 0 auto;
 }
+.App h1 {
+  background-color: #0302369c;
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  width: 100%;
+  max-width: 728px;
+  top: -30px;
+
+ 
+
+}
 
 .App header {
-  background-color: #181717;
+  font-size: 30px;
+  background-color: #0302369c;
   height: 10vh;
   min-height: 50px;
   color: white;
-  position: fixed;
+  position: absolute;
   width: 100%;
   max-width: 728px;
-  top: 0;
+  top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,11 +43,23 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-image: url(assets/background.jpg);
+  
+}
+
+.readMessage {
+  display: flex;
+  justify-content: end;
+  margin: -8px -20px -5px 0;
+}
+
+.readMessage img {
+  height: 16px;
+  width: 16px;
 }
 
 main {
-  padding: 10px;
+  padding: 50px;
   height: 80vh;
   margin: 10vh 0 10vh;
   overflow-y: scroll;
@@ -47,7 +72,7 @@ main::-webkit-scrollbar {
 }
 
 main::-webkit-scrollbar-track {
-  background: #1e1e24;
+  background: #0302369c;
 }
 
 main::-webkit-scrollbar-thumb {
@@ -55,10 +80,10 @@ main::-webkit-scrollbar-thumb {
 }
 
 form {
-  height: 10vh;
+  height: 7vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
+  background-color: 0302369c;
   width: 100%;
   max-width: 728px;
   display: flex;
@@ -67,7 +92,9 @@ form {
 
 form button {
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  background-color: #c2fbd7;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
 }
 
 
@@ -83,7 +110,7 @@ input {
 }
 
 button {
-  background-color: #282c34; /* Green */
+  background-color: #0302369c;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -101,14 +128,13 @@ button:disabled {
 
 
 .sign-in {
-  color: #282c34;
-  background: white;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
   max-width: 400px;
   margin: 0 auto;
 }
-
-
-
 
 ul, li {
   text-align: left;
@@ -137,9 +163,15 @@ p {
 }
 
 .sent p {
-  color: white;
-  background: #0b93f6;
+  color: rgb(0, 0, 0);
+  background: #c2fbd7;
   align-self: flex-end;
+}
+.timestamp {
+  font-size: 13px;
+  color: gray;
+  text-align: end;
+  line-height: 5px;
 }
 .received p {
   background: #e5e5ea;
